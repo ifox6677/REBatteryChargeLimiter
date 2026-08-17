@@ -1,0 +1,20 @@
+<i>Battery Charge Limiter</i> (BCL) is a fork of <b>Battery Charge Limit</b> whose development has been stalled for some time.
+
+<i>This app is a work in progress and currently requires root to operate. If a feature is not working, do not hesitate to file a report.</i>
+
+<b>Features:</b>
+<ul>
+    <li>Free and open source.</li>
+    <li>Material 3 with dynamic colours.</li>
+    <li>Control when to start and stop charging — either directly or via an widget.</li>
+    <li>Set voltage threshold.</li>
+    <li>Set custom battery control configuration if the supplied ones cannot be used properly.</li>
+</ul>
+
+<b>Same as ACC?</b>
+
+ACC offers a broad range of features which might be too much for some people.
+
+<b>Troubleshooting</b>
+
+If BCL cannot start or stop charging correctly, enable <b>Always Write CTRL File</b> in the settings.

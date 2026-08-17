@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace "io.github.zhangjq.bcl"
+    compileSdk 34
+    defaultConfig {
+        applicationId "io.github.zhangjq.bcl"
+        minSdk 21
+        targetSdk 34
+        versionCode 27
+        versionName "1.1.8"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
+            resValue "string", "app_name", "BCL Debug"
+            resValue "string", "app_short_name", "BCL Debug"
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        fdroid {
+            applicationIdSuffix '.fdroid'
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            // use the platform-provided debug keystore instead of a committed one
+            storeFile file("${System.getProperty('user.home')}/.android/debug.keystore")
+        }
+    }
+    productFlavors {
+    }
+    buildFeatures {
+        buildConfig true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation 'com.github.topjohnwu.libsu:core:5.2.2'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}

@@ -1,0 +1,2 @@
+- Added support for Android 12 and later
+- Added Simplified and Tamil translations

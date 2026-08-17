@@ -1,0 +1,1 @@
+Control when to start and stop charging your battery

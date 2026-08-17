@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RadioButton
+        android:id="@+id/cf_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        tools:text="charging_enabled" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cf_label"
+        android:gravity="top|start"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="32dp">
+
+        <TextView
+            android:id="@+id/cf_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="?attr/colorOnSurfaceVariant" />
+
+        <TextView
+            android:id="@+id/cf_experimental"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/experimental"
+            android:textColor="?attr/colorError" />
+
+        <TextView
+            android:id="@+id/cf_issues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/issues"
+            android:textColor="?attr/colorError" />
+
+    </LinearLayout>
+
+</RelativeLayout>

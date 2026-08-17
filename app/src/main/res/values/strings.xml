@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Battery Charge Limiter</string>
+    <string name="app_short_name">BCL</string>
+    <string name="action_settings">Settings</string>
+    <string name="source_code" translatable="false"><a href="https://github.com/zhangjq/BatteryChargeLimiter">Source Code</a></string>
+    <string name="xda_thread" translatable="false"><a href="https://forum.xda-developers.com/android/apps-games/root-battery-charge-limit-t3557002/">XDA Thread</a></string>
+    <string name="disable_charge_now">Disable charge now</string>
+    <string name="limit_by_voltage">Limit by voltage</string>
+    <string name="custom_voltage_threshold">Custom Voltage threshold</string>
+    <string name="enable">Enable charge limit</string>
+    <string name="notify">Notify when limit is reached</string>
+    <string name="limit">Limit charging to %1$d%%</string>
+    <string name="recharge_below">Recharge below %1$d%%</string>
+    <string name="status">Status: </string>
+    <string name="status_ctrl_data_label">Control file data</string>
+    <string name="experimental">EXPERIMENTAL</string>
+    <string name="issues">KNOWN ISSUES</string>
+    <string name="auto_reset_stats">Automatically reset battery stats</string>
+    <string name="reset_stats">Reset Battery Stats</string>
+    <string name="disable">Disable</string>
+    <string name="disable_temporarily">Disable temporarily</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="open_app">Open App</string>
+    <string name="file_data">(CTRL file data will appear here)</string>
+
+    <string name="previously_started">Previously Started</string>
+    <string name="device_not_supported">Your device is not supported (yet)!</string>
+    <string name="ok">OK</string>
+    <string name="no_recharge">No automatic recharge</string>
+
+    <string name="charging">CHARGING</string>
+    <string name="discharging">DISCHARGING</string>
+    <string name="full">FULL</string>
+    <string name="not_charging">NOT CHARGING</string>
+    <string name="unknown">UNKNOWN</string>
+
+    <string name="please_wait">Please wait…</string>
+    <string name="maintaining_x_to_y">Maintaining from %1$d%% - %2$d%%</string>
+    <string name="battery_full_no_charge">Battery sufficient, no charging needed</string>
+    <string name="maintaining_description">If device becomes unplugged, disable service</string>
+    <string name="waiting_until_x">Charging to %1$d%%</string>
+    <string name="battery_info_C">U: %1$.3f V, T: %2$.1f &#8451;</string>
+    <string name="battery_info_F">U: %1$.3f V, T: %2$.1f &#8457;</string>
+
+    <string name="root_denied">App is denied ROOT access or device is not rooted!</string>
+    <string name="stats_reset_success">Battery Stats reset successful</string>
+
+    <string name="intent_handle_activity">Battery Charge Limit Handling Activity</string>
+    <string name="intent_invalid">The supplied intent was invalid.</string>
+    <string name="intent_limit_invalid">The supplied limit was invalid.</string>
+    <string name="intent_limit_accepted">The battery charging limit was changed to %1$d%%.</string>
+    <string name="mime_battery_limit" translatable="false">text/x-battery-limit</string>
+
+    <string name="service_enabled"> Battery Limit Service Enabled! </string>
+    <string name="service_disabled"> Battery Limit Service Disabled! </string>
+    <string name="notification_permission_denied_hint">Notifications are disabled. The charging status notification will not be shown. You can enable it later in the system settings.</string>
+
+    <string name="main_settings">Main Settings</string>
+    <string name="set_control_file">Set Control File</string>
+    <string name="select_control_file">Select Control File</string>
+    <string name="show_temperature_fahrenheit">Show Temperature in &#8457;</string>
+    <string name="enforce_charge_limit">Enforce Charge Limit</string>
+    <string name="enforce_charge_limit_desc">Attempt to force the device to recognize changes to the control file by toggling its state with an increasing delay</string>
+    <string name="always_write_cf">Always Write CTRL File</string>
+    <string name="always_write_cf_desc">Always overwrite the control file blindly, even if it already contains the new content</string>
+
+    <string name="advanced_settings">Advanced Settings</string>
+    <string name="immediate_power_intent_handling">Always Handle Power Events</string>
+    <string name="immediate_power_intent_handling_desc">Power changes will be recognized immediately, even directly after control file changes.\nUse only for supported control files like battery_charging_enabled or store_mode!</string>
+    <string name="disable_auto_recharge"> Disable auto recharge</string>
+    <string name="disable_auto_recharge_desc">Experimental: Enabling this option also hides notification after limit reached. Important: Disable this option before uninstalling or reboot after uninstalling</string>
+
+    <string name="hide_toast_on_service_change">Hide Toast on Service Changes</string>
+
+    <string name="control_file_settings">Control File Data</string>
+    <string name="current_ctrl_data_title">Configured File Data</string>
+    <string name="control_file_option_summary_on">User specified CTRL file data being utilized</string>
+    <string name="control_file_option_summary_off">Pre-defined CTRL file being utilized</string>
+    <string name="control_file_alert_title">Advanced Users Only!</string>
+    <string name="control_file_alert_desc">WARNING: Tampering with this section without knowledge of what you are changing may cause problems to your device that are unforeseen. Rebooting the device usually fixes a lot of issues, however, some may not be as easily fixed. PROCEED WITH CAUTION!</string>
+    <string name="control_understand">I understand</string>
+    <string name="control_file_heads_up_title">Control File Information</string>
+    <string name="control_file_heads_up_desc">Only control files detected on your device will show up as available. If a control file is detected, but for another device, it should be safe to use. Open an issue or send a pull request on GitHub for your device with the control file data to be added to this list.</string>
+
+    <string name="custom_ctrl_file_data_title">Configurable CTRL File Data</string>
+    <string name="custom_ctrl_file_data_setup_title">Configure Control Data</string>
+    <string name="custom_ctrl_file_path_title">Set Path to Desired File</string>
+    <string name="custom_ctrl_file_path_hint">/sys/folder/folder/desired_file</string>
+    <string name="custom_ctrl_file_enabled_title">Set Enabled Value</string>
+    <string name="custom_ctrl_file_enabled_hint">1, enabled, desired_value</string>
+    <string name="custom_ctrl_file_disabled_title">Set Disabled Value</string>
+    <string name="custom_ctrl_file_disabled_hint">0, disabled, desired_value</string>
+    <string name="custom_ctrl_file_updated_info">Updated data will appear here once you update the information</string>
+    <string name="custom_ctrl_file_heads_up">If you experience issues with app crashes or the service not working properly, try enabling Always Write CTRL File in settings. There is NO guarantee that this configurable control file function will support all devices and files/values. Try adjusting the settings if issues occur or ensure the data is correct.</string>
+    <string name="custom_ctrl_file_update_data">Update CTRL File Data</string>
+
+    <string name="theme">Theme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="black">Black - AMOLED</string>
+    <string name="current_voltage_threshold">Current Voltage Threshold</string>
+    <string name="default_voltage_threshold">Default Voltage Threshold</string>
+    <string name="control_battery_charge_permission_label">Control battery charge</string>
+    <string name="control_battery_charge_permission_description">control battery charge</string>
+    <string name="voltage_threshold_title">Voltage Threshold (in mV or µV)</string>
+
+    <string name="auto_shutdown_settings">Auto Shutdown</string>
+    <string name="auto_shutdown">Auto shutdown on low battery</string>
+    <string name="auto_shutdown_desc">Shut down the device via root when the battery stays below the threshold for 30 seconds while not charging</string>
+    <string name="auto_shutdown_threshold">Shutdown threshold</string>
+    <string name="auto_shutdown_threshold_summary">Shut down when the battery falls below %1$d%%</string>
+    <string name="auto_shutdown_skip_charging">No shutdown while charging</string>
+    <string name="auto_shutdown_skip_charging_desc">Do not shut down while the device is charging</string>
+    <string name="auto_shutdown_notification_channel">Auto Shutdown</string>
+    <string name="auto_shutdown_notif_title">Auto Shutdown</string>
+    <string name="auto_shutdown_next_wake_notif">Next check in %1$d min · shutdown at %2$d%%</string>
+    <string name="auto_shutdown_tracking_notif">Tracking battery · shutdown at %1$d%%</string>
+    <string name="auto_shutdown_countdown_notif">Below %1$d%% · shutdown in %2$d s</string>
+    <string name="auto_shutdown_low_battery_notif">Low battery, please charge · auto shutdown at %1$d%%</string>
+</resources>
